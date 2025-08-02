@@ -1,60 +1,79 @@
-# Email Forensic Tool (Python)
+# 🕵️‍♂️ Email Forensic Analyzer (GUI, Python)
 
-A tool that quickly parses through `.eml` files and says if the given email is spoofed or not. It also gives the user necessary information like sender's IP address and Message IDs. It can be useful for forensic analysts who need to analyze large EML files quickly or can be used by a non-technical person who can't understand RAW EML data.
+**Email Forensic Analyzer** is a GUI-based Python tool built with `tkinter` that allows users to inspect `.eml` files for forensic indicators. The tool parses key headers to determine whether the email might be spoofed and extracts useful metadata like SPF/DKIM/DMARC records, sender IP address, provider info, and more — all without needing to understand raw EML format.
 
-## Features
+## 🧠 Key Features
 
-- Detects spoofed emails from `.eml` files  
-- Extracts sender's IP address  
-- Displays Message IDs  
-- Fast parsing for large EML datasets  
-- Simple for non-technical users  
+- ✅ Detects potential **email spoofing** using SPF, DKIM, and DMARC
+- 🌐 Extracts **sender IP address**
+- 🔍 Identifies **email service provider** (Gmail, Outlook, Yahoo, etc.)
+- 🧾 Displays important email metadata:
+  - Message-ID
+  - Subject
+  - Content-Type
+  - Date and Time
+- 📂 Easy `.eml` file picker and scrolling output
+- 🖥️ GUI built using Python's `tkinter` — beginner friendly!
 
-## Installation
+## 📦 Installation
 
-Clone the repository:
+1. **Clone the Repository**
 
 ```bash
 git clone https://github.com/REVEAL1001/Email-Forensic-Tool-Python.git
 cd Email-Forensic-Tool-Python
 ```
 
-Install dependencies:
+2. **Install Dependencies**
 
-```bash
-pip install -r requirements.txt
-```
+No external libraries required — only Python's standard libraries are used.  
+Ensure you have **Python 3.6+** installed.
 
-## Usage
+## 🚀 Usage
 
-Place your `.eml` files in the working directory.
+1. Place your `.eml` files somewhere accessible.
 
-Run the tool:
+2. Run the tool:
 
 ```bash
 python main.py
 ```
 
-Follow the instructions in the terminal to analyze your EML files.
+3. A GUI window will open:
+   - Click **"Open .eml File"**
+   - Select an email file
+   - View the parsed forensic output
 
-## Example Output
+## 🧪 Example Output
 
 ```
-Sender's IP Address: 192.168.1.1  
-Message ID: <12345@example.com>  
-Spoofed: Yes
+Message-ID: <1234@mail.example.com>
+SPF Record: pass (google.com: domain of user@example.com designates ...)
+DKIM Record: pass
+DMARC Record: pass
+Spoofed Email Check: No spoofing detected ✅
+Sender IP Address: 198.51.100.1
+Service Provider: Gmail (Google)
+Content-Type: text/plain
+Date and Time: Thu, 01 Aug 2025 10:30:00 -0700
+Subject: Important Security Alert
 ```
 
-## Contributing
+## 🎨 GUI Preview
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+> *Screenshot support coming soon — or feel free to add your own!*
 
-## License
+## 🤝 Contributing
 
-MIT
+Have an idea or improvement? Feel free to fork and submit a pull request.  
+All suggestions are welcome.
 
-## Author
-Sambardhan Khanal
-[REVEAL1001](https://github.com/REVEAL1001)
+## 🛡️ License
 
+This project is licensed under the **MIT License**.
 
+---
+
+## 👨‍💻 Author
+**Sambardhan Khanal**  
+[R3VEAL1001](https://github.com/REVEAL1001)
