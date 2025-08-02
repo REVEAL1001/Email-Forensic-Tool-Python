@@ -59,10 +59,6 @@ Date and Time: Thu, 01 Aug 2025 10:30:00 -0700
 Subject: Important Security Alert
 ```
 
-## 🎨 GUI Preview
-
-> *Screenshot support coming soon — or feel free to add your own!*
-
 ## 🤝 Contributing
 
 Have an idea or improvement? Feel free to fork and submit a pull request.  
